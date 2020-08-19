@@ -1,0 +1,50 @@
+# git init - khởi tạo repo
+# git status - Kiểm tra trạng thái trên Repo
+--thêm file Readme.txt vào Folder GIT.
+# git add Readme.txt - thêm file Readme.txt vào staging
+# git commit -m "init introGit"
+# 
+# git add* thêm tất cả các file vào trạng thái staged.
+# git commit -a -m "Chú thích dự án" commit file chưa nằm hoặc nằm trong vùng staged"
+#
+# touch .gitignore -tạo file .gitignore (thông báo cho rp không theo dõi các file được khai báo trong .gitignore)
+#
+# rm <filename> xoá file trong vùng woking tree
+# git rm <filename> xoá file trong vùng staged
+# git commit -m "Delete File"
+#
+# git reset HEAD <filename> khôi phục tất cả nội dung file bị xoá
+# git checkout --filename   khôi phục thời điểm nội dung file đã thay đổi gần nhất
+# 
+Tập tin được staged , edit nội dung và đưa về trạng thái modifiled nhưng chưa thêm staged.
+# git rm <filename> - Trường hợp này sẽ lỗi k xoá dc.
+# git rm -f <filename> - thêm option -f 
+# git rm --cached <filename> thêm option --cached
+#
+# git mv filename1 filename2  - đổi tên từ filename1 sang filename2, nội dung chuyển từ 1 sang 2 giữ nguyên và thay thế bằng tên filename2.
+#
+#
+#chỉnh sửa nội dung một file bất kỳ, khôi phục nội dung .
+# git checkout --<filename>
+# git commit -a -m "changecontent"
+# git status - kiểm tra lại .
+# git add *
+# git status.
+#
+#
+#Commit sau khi đã thao tác với các file mà k cần commit nhiều lần.
+# git commit --amend
+#
+#
+#Xem lịch sử log các commit.
+# git log 
+# git log -p -5  - Xem lịch sử của 5 commit gần nhất
+# git log --stat - Hiển thị lịch sử commit dạng thông tin tóm tắt.
+#
+# git log --pretty=online - Hiển thị lịch sử commit với mỗi commit là một dòng.
+# git log --prett=format: "%h:%s" - Hiển thị lịch sử commit theo param giờ và nội dung.
+
+
+
+
+  
