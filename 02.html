@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>02</title>
+<style type ="text/css">
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	.box
+	{
+		width: 200px;
+		border: 2px solid #F00;
+		min-height:500px;
+		max-height: 700px;
+		margin: 20px auto;
+		text-align: justify;
+	}
+</style>
+</head>
+<body>
+	<div class="box">
+    Theo yêu cầu nghiệp vụ, Hệ thống CRM luồng checkin bijindo có thay đổi như sau :
+Bài toán
+BE tại các trung tâm đang thiếu, nếu khách đến nhiều vượt quá số BE tại trung tâm thì lễ tân không thực hiện checkin được cho khách(do không gán được phòng BE) -> Khách ở TT mà không được checkin -> Tele lại gọi điện nhắc khách.
+Phương án thực hiện
+Cũ : Khi checkin cho khách (demo Bijindo) bắt buộc phải chọn gán phòng BE.
+Mới : Khi checkin cho khách, Lễ tân không bắt buộc chọn gán phòng BE.
+Trường hợp Lễ tân checkin không gán phòng BE -> Vẫn checkin được cho khách nhưng BE sẽ không thấy khách để nhận khách
+Sau khi checkin không gán phòng BE, Lễ tân cần phải cập nhật, gán lại phòng BE cho khách đã checkin (khi đã có rảnh phòng BE) để BE có thể thấy và nhận khách.
+Trường hợp Lễ tân không cập nhật gán phòng BE
+Lễ tân checkout tại bước Lễ tân (do không có BE khách không đợi được)
+Hoặc khách hàng sẽ bị treo trên hệ thống (do Lễ tân quên)
+      Vậy nhờ các anh Truyền thông đến anh em IT để anh em nắm được thông tin, hỗ trợ trung tâm ạ
+    </div>
+</body>
+</html>
